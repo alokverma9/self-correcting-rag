@@ -176,3 +176,5 @@ TRACK.md
 pgdata/
 data/raw/
 *.db
+data/processed/
+*.jsonl
