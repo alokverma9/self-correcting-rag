@@ -1,0 +1,352 @@
+[
+  {
+    "id": 1,
+    "question": "What does the UniMate model achieve in character animation?",
+    "ground_truth": "UniMate is a unified model designed to animate diverse skeleton structures across character models, allowing motion retargeting and animation without requiring model re-architecting.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 2,
+    "question": "What is the purpose of the WearableQA benchmark?",
+    "ground_truth": "WearableQA is a benchmark designed for health reasoning over real-world multimodal wearable sensor data.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 3,
+    "question": "How does RegionFed address challenges in retail environments?",
+    "ground_truth": "RegionFed introduces federated learning for personalized query understanding tailored to heterogeneous retail environments across regional stores.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 4,
+    "question": "What does the ROBORMBENCH benchmark study regarding Vision Language Reward Models?",
+    "ground_truth": "ROBORMBENCH evaluates paraphrase fragility in vision language reward models where identical trajectories receive contradictory rewards under paraphrased prompts.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 5,
+    "question": "What does the Korean Open Public APIs benchmark evaluate for tool-calling?",
+    "ground_truth": "It evaluates multi-step tool-calling capabilities of language models over Korean open public APIs and provides a data-synthesis recipe.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 6,
+    "question": "What techniques does the trade-up recommendation paper combine for scalability?",
+    "ground_truth": "It combines reasoning distillation globally with product-type test-time training locally for scalable trade-up recommendations.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 7,
+    "question": "What does the study on memory portability examine when language models upgrade?",
+    "ground_truth": "It examines whether an AI agent's long-term conversational and task memory survives across model upgrades.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 8,
+    "question": "What system does the variational continuation method analyze for periodic orbits?",
+    "ground_truth": "It analyzes periodic orbits in a double pendulum dynamic system using variational continuation.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 9,
+    "question": "For what application does the lightweight Vision Transformer compression paper optimize?",
+    "ground_truth": "It optimizes on-device plant disease detection in resource-constrained agricultural field conditions.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 10,
+    "question": "What is the purpose of the contextual individuation toolkit in Transformer language models?",
+    "ground_truth": "It provides a technical toolkit for measuring contextual individuation and token representation separation in Transformer language models.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 11,
+    "question": "What method is proposed for categorical graph generation in Embedded Graph Flows?",
+    "ground_truth": "Embedded Graph Flows propose continuous flow matching techniques embedded in latent spaces for generating categorical graphs.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 12,
+    "question": "In what setting is the adaptive gated deepfake detection framework designed to operate?",
+    "ground_truth": "It is designed for low-resolution and resource-constrained environments to detect deepfakes efficiently.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 13,
+    "question": "What theoretical problem does the optimal rates paper investigate for networked agents?",
+    "ground_truth": "It investigates optimal convergence and information aggregation rates for agentic networked information aggregation.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 14,
+    "question": "How are Large Language Models utilized in building energy systems according to the review?",
+    "ground_truth": "They are reviewed for HVAC operations, supervisory control, and fault detection readiness in building energy systems.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 15,
+    "question": "How does mHC use its residual streams according to the paper?",
+    "ground_truth": "mHC uses its residual streams through selective routing and near-identity mixing across network layers.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 16,
+    "question": "What does Influence Score measure in Transformers at inference time?",
+    "ground_truth": "Influence Score measures the effective impact and importance of individual attention heads at inference time.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 17,
+    "question": "What dynamics do Attention-Indexed Models investigate in high dimensions?",
+    "ground_truth": "They investigate high-dimensional learning dynamics and representation learning in models indexed by attention mechanisms.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 18,
+    "question": "What does LookThere! propose for vision transformer efficiency?",
+    "ground_truth": "LookThere! proposes sparse vision processing through reinforced token selection to skip redundant image tokens.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 19,
+    "question": "How does UniMate handle different skeleton topologies?",
+    "ground_truth": "UniMate handles diverse skeleton topologies by mapping heterogeneous joint hierarchies into a unified topological latent space.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 20,
+    "question": "What clinical insights does WearableQA aim to derive from sensor streams?",
+    "ground_truth": "It aims to derive longitudinal health reasoning, sleep analysis, and physiological anomaly detection from wearable sensor streams.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 21,
+    "question": "Why is federated learning required for query understanding in RegionFed?",
+    "ground_truth": "Federated learning preserves customer query privacy across decentralized retail store servers while adapting to regional vocabularies.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 22,
+    "question": "Why are Vision Language Reward Models fragile to paraphrasing in ROBORMBENCH?",
+    "ground_truth": "They exhibit sensitivity where syntactically different but semantically identical prompts lead to opposite trajectory reward scores.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 23,
+    "question": "How does test-time training improve trade-up recommendations?",
+    "ground_truth": "Test-time training adapts model parameters on the fly using local product-type interactions during recommendation inference.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 24,
+    "question": "What are the main risks identified when upgrading an agent's underlying LLM memory?",
+    "ground_truth": "Semantic drift, incompatible state serialization, and retrieval degradation across parameter checkpoints.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 25,
+    "question": "What advantages does Vision Transformer compression offer for agricultural sensors?",
+    "ground_truth": "It reduces parameter count and memory bandwidth, enabling real-time leaf disease inference on low-power edge hardware.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 26,
+    "question": "What does contextual individuation reveal about token embeddings in deep layers?",
+    "ground_truth": "It reveals how token representations become uniquely differentiated from their initial context-free embeddings as depth increases.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 27,
+    "question": "How do Embedded Graph Flows handle discrete edge connectivity?",
+    "ground_truth": "They map discrete adjacency structures into continuous flows that project back onto valid categorical graph topologies.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 28,
+    "question": "How does gating assist deepfake detection in low-resolution video?",
+    "ground_truth": "Adaptive gating dynamically focuses computation on subtle spatial-temporal compression artifacts rather than global features.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 29,
+    "question": "What is the communication complexity bound in agentic networked aggregation?",
+    "ground_truth": "The paper establishes Pareto-optimal trade-offs between rounds of peer-to-peer message exchanges and information aggregation accuracy.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 30,
+    "question": "What obstacles currently prevent autonomous LLM control of HVAC systems in buildings?",
+    "ground_truth": "Safety constraints, lack of real-time control guarantees, and potential physical damage from out-of-distribution actuation commands.",
+    "type": "in_corpus",
+    "expected_behavior": "Vectorstore retrieves relevant arXiv paper chunks; naive and corrective RAG both answer with high faithfulness."
+  },
+  {
+    "id": 31,
+    "question": "How do attention mechanisms perform sparse selection in vision models?",
+    "ground_truth": "Sparse vision transformers select a subset of important image tokens using reinforcement learning or gating, skipping redundant background patches as in LookThere.",
+    "type": "ambiguous",
+    "expected_behavior": "Naive RAG retrieves partial chunks and risks low relevance; Corrective RAG evaluates chunk relevance and supplements via web fallback or rewrites query."
+  },
+  {
+    "id": 32,
+    "question": "What are the key privacy guarantees in federated query processing for retail?",
+    "ground_truth": "Federated query processing keeps customer interaction logs local to edge servers and only transmits aggregated gradient updates.",
+    "type": "ambiguous",
+    "expected_behavior": "Naive RAG retrieves partial chunks and risks low relevance; Corrective RAG evaluates chunk relevance and supplements via web fallback or rewrites query."
+  },
+  {
+    "id": 33,
+    "question": "How does residual stream routing impact representation mixing in modern architectures?",
+    "ground_truth": "Residual streams can act as highway channels where selective routing and near-identity mixing prevent layer degradation.",
+    "type": "ambiguous",
+    "expected_behavior": "Naive RAG retrieves partial chunks and risks low relevance; Corrective RAG evaluates chunk relevance and supplements via web fallback or rewrites query."
+  },
+  {
+    "id": 34,
+    "question": "What methods evaluate whether attention heads are actually necessary during model inference?",
+    "ground_truth": "Methods such as Influence Scores and ablation quantify the performance delta when specific attention heads are masked during inference.",
+    "type": "ambiguous",
+    "expected_behavior": "Naive RAG retrieves partial chunks and risks low relevance; Corrective RAG evaluates chunk relevance and supplements via web fallback or rewrites query."
+  },
+  {
+    "id": 35,
+    "question": "How can edge devices detect synthetic facial manipulations under severe compression?",
+    "ground_truth": "Through adaptive gating and multi-scale frequency analysis that capture compression-resilient facial artifacts.",
+    "type": "ambiguous",
+    "expected_behavior": "Naive RAG retrieves partial chunks and risks low relevance; Corrective RAG evaluates chunk relevance and supplements via web fallback or rewrites query."
+  },
+  {
+    "id": 36,
+    "question": "What strategies allow continuous diffusion models to generate discrete graph structures?",
+    "ground_truth": "Embedding graph structures into continuous latent representations or using continuous flow matching with categorical projections.",
+    "type": "ambiguous",
+    "expected_behavior": "Naive RAG retrieves partial chunks and risks low relevance; Corrective RAG evaluates chunk relevance and supplements via web fallback or rewrites query."
+  },
+  {
+    "id": 37,
+    "question": "How can recommendation systems adapt to new product types without retraining the whole model?",
+    "ground_truth": "By using local test-time training on product categories alongside globally distilled reasoning representations.",
+    "type": "ambiguous",
+    "expected_behavior": "Naive RAG retrieves partial chunks and risks low relevance; Corrective RAG evaluates chunk relevance and supplements via web fallback or rewrites query."
+  },
+  {
+    "id": 38,
+    "question": "What metrics determine if an AI agent's memory remains compatible across version upgrades?",
+    "ground_truth": "Retrieval precision of historical conversational state, semantic alignment of episodic vectors, and task completion fidelity.",
+    "type": "ambiguous",
+    "expected_behavior": "Naive RAG retrieves partial chunks and risks low relevance; Corrective RAG evaluates chunk relevance and supplements via web fallback or rewrites query."
+  },
+  {
+    "id": 39,
+    "question": "Why do vision language models give conflicting reward values to identical robot trajectories?",
+    "ground_truth": "Because their prompt encoders overfit to specific lexical patterns, causing paraphrase fragility where phrasing changes alter preference scores.",
+    "type": "ambiguous",
+    "expected_behavior": "Naive RAG retrieves partial chunks and risks low relevance; Corrective RAG evaluates chunk relevance and supplements via web fallback or rewrites query."
+  },
+  {
+    "id": 40,
+    "question": "What benchmarks test multi-step API invocation for non-English public services?",
+    "ground_truth": "Benchmarks like the Korean Open Public APIs benchmark evaluate multi-turn planning and parameter binding over municipal APIs.",
+    "type": "ambiguous",
+    "expected_behavior": "Naive RAG retrieves partial chunks and risks low relevance; Corrective RAG evaluates chunk relevance and supplements via web fallback or rewrites query."
+  },
+  {
+    "id": 41,
+    "question": "What is FlashAttention and who proposed it?",
+    "ground_truth": "FlashAttention was proposed by Tri Dao et al. as an IO-aware exact attention algorithm that reduces memory reads and writes between GPU SRAM and HBM.",
+    "type": "out_of_corpus",
+    "expected_behavior": "Naive RAG retrieves irrelevant arXiv chunks and produces hallucinated or empty answers; Corrective RAG detects lack of relevant docs, routes to web search fallback, and produces grounded, accurate answers."
+  },
+  {
+    "id": 42,
+    "question": "What is Direct Preference Optimization (DPO) in language model alignment?",
+    "ground_truth": "Direct Preference Optimization (DPO) was proposed by Rafailov et al. to align language models directly on human preferences using a closed-form loss without needing a separate reward model or RL.",
+    "type": "out_of_corpus",
+    "expected_behavior": "Naive RAG retrieves irrelevant arXiv chunks and produces hallucinated or empty answers; Corrective RAG detects lack of relevant docs, routes to web search fallback, and produces grounded, accurate answers."
+  },
+  {
+    "id": 43,
+    "question": "What is Quantized Low-Rank Adaptation (QLoRA)?",
+    "ground_truth": "QLoRA was introduced by Tim Dettmers et al. to fine-tune LLMs efficiently by quantizing base model weights to 4-bit NormalFloat (NF4) while adding trainable 16-bit LoRA adapters.",
+    "type": "out_of_corpus",
+    "expected_behavior": "Naive RAG retrieves irrelevant arXiv chunks and produces hallucinated or empty answers; Corrective RAG detects lack of relevant docs, routes to web search fallback, and produces grounded, accurate answers."
+  },
+  {
+    "id": 44,
+    "question": "What is Speculative Decoding in LLM inference?",
+    "ground_truth": "Speculative decoding uses a smaller, faster draft model to generate candidate tokens that are validated in parallel by a larger target model, accelerating inference without altering output distribution.",
+    "type": "out_of_corpus",
+    "expected_behavior": "Naive RAG retrieves irrelevant arXiv chunks and produces hallucinated or empty answers; Corrective RAG detects lack of relevant docs, routes to web search fallback, and produces grounded, accurate answers."
+  },
+  {
+    "id": 45,
+    "question": "What is RoPE (Rotary Position Embedding) and where is it used?",
+    "ground_truth": "Rotary Position Embedding (RoPE), introduced by Su et al., encodes positional information by multiplying representations by a rotation matrix, widely used in LLaMA, Mistral, and modern LLMs.",
+    "type": "out_of_corpus",
+    "expected_behavior": "Naive RAG retrieves irrelevant arXiv chunks and produces hallucinated or empty answers; Corrective RAG detects lack of relevant docs, routes to web search fallback, and produces grounded, accurate answers."
+  },
+  {
+    "id": 46,
+    "question": "What is the Mixture of Experts (MoE) architecture in modern LLMs?",
+    "ground_truth": "Mixture of Experts (MoE) replaces dense feedforward layers with multiple expert sub-networks and a router gate that activates only a subset of experts per token (e.g., Mixtral 8x7B).",
+    "type": "out_of_corpus",
+    "expected_behavior": "Naive RAG retrieves irrelevant arXiv chunks and produces hallucinated or empty answers; Corrective RAG detects lack of relevant docs, routes to web search fallback, and produces grounded, accurate answers."
+  },
+  {
+    "id": 47,
+    "question": "What is Grouped-Query Attention (GQA)?",
+    "ground_truth": "Grouped-Query Attention (GQA) groups query heads into shared key-value head pairs, interpolating between Multi-Head Attention and Multi-Query Attention to reduce KV cache memory while maintaining quality.",
+    "type": "out_of_corpus",
+    "expected_behavior": "Naive RAG retrieves irrelevant arXiv chunks and produces hallucinated or empty answers; Corrective RAG detects lack of relevant docs, routes to web search fallback, and produces grounded, accurate answers."
+  },
+  {
+    "id": 48,
+    "question": "What is RingAttention in long-context language modeling?",
+    "ground_truth": "RingAttention performs blockwise attention computation across a ring of distributed devices, overlapping communication with computation to scale context length to millions of tokens.",
+    "type": "out_of_corpus",
+    "expected_behavior": "Naive RAG retrieves irrelevant arXiv chunks and produces hallucinated or empty answers; Corrective RAG detects lack of relevant docs, routes to web search fallback, and produces grounded, accurate answers."
+  },
+  {
+    "id": 49,
+    "question": "What is the purpose of the Chinchilla optimal scaling laws?",
+    "ground_truth": "Kaplan and Hoffmann et al. (Chinchilla) showed that for compute-optimal training, model parameter count and training token count should be scaled equally in equal proportions.",
+    "type": "out_of_corpus",
+    "expected_behavior": "Naive RAG retrieves irrelevant arXiv chunks and produces hallucinated or empty answers; Corrective RAG detects lack of relevant docs, routes to web search fallback, and produces grounded, accurate answers."
+  },
+  {
+    "id": 50,
+    "question": "What is Contrastive Decoding for language models?",
+    "ground_truth": "Contrastive decoding improves generation quality and reduces hallucinations by contrasting the probability distribution of an expert model with an amateur or smaller model.",
+    "type": "out_of_corpus",
+    "expected_behavior": "Naive RAG retrieves irrelevant arXiv chunks and produces hallucinated or empty answers; Corrective RAG detects lack of relevant docs, routes to web search fallback, and produces grounded, accurate answers."
+  }
+]

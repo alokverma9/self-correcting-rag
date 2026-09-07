@@ -1,0 +1,175 @@
+{
+  "num_eval_samples": 6,
+  "naive_rag": {
+    "faithfulness": 0.9333333333333332,
+    "answer_relevancy": 0.38325495254056213,
+    "context_precision": 0.49999999995,
+    "context_recall": 0.5
+  },
+  "corrective_rag": {
+    "faithfulness": 0.9333333333333332,
+    "answer_relevancy": 0.9388493633286502,
+    "context_precision": 0.6666666666277777,
+    "context_recall": 0.5
+  },
+  "metrics_table": [
+    {
+      "Metric": "Faithfulness",
+      "Naive RAG": 0.9333333333333332,
+      "Corrective RAG": 0.9333333333333332,
+      "Delta": 0.0
+    },
+    {
+      "Metric": "Answer Relevancy",
+      "Naive RAG": 0.38325495254056213,
+      "Corrective RAG": 0.9388493633286502,
+      "Delta": 0.5555944107880881
+    },
+    {
+      "Metric": "Context Precision",
+      "Naive RAG": 0.49999999995,
+      "Corrective RAG": 0.6666666666277777,
+      "Delta": 0.16666666667777774
+    },
+    {
+      "Metric": "Context Recall",
+      "Naive RAG": 0.5,
+      "Corrective RAG": 0.5,
+      "Delta": 0.0
+    }
+  ],
+  "per_query_results": [
+    {
+      "id": 1,
+      "question": "What does the UniMate model achieve in character animation?",
+      "type": "in_corpus",
+      "ground_truth": "UniMate is a unified model designed to animate diverse skeleton structures across character models, allowing motion retargeting and animation without requiring model re-architecting.",
+      "naive_answer": "Based on the provided context, the UniMate model synthesizes articulated motion for arbitrary skeletons from a rigged 3D asset and a text prompt, with no test-time optimization or per-skeleton retraining. It outperforms state-of-the-art baselines in quality, generalization, and efficiency, and supports zero-shot cross-topology transfer, in-betweening, expansion, and text-guided editing.",
+      "naive_contexts_count": 3,
+      "naive_latency_sec": 7.82,
+      "corrective_answer": "Based on the provided context, UniMate achieves the following in character animation:\n\n* It synthesizes articulated motion for arbitrary skeletons (characters with diverse skeletal topologies) using a rigged 3D asset and a text prompt within a single unified model, with no test-time optimization or per-skeleton retraining required.\n* It supports zero-shot cross-topology transfer, in-betweening, expansion, and text-guided editing. \n* It outperforms state-of-the-art baselines in quality, generalization, and efficiency.",
+      "corrective_contexts_count": 4,
+      "corrective_latency_sec": 11.23,
+      "correction_path_taken": true,
+      "rewritten_query": "UniMate character animation model capabilities achievements",
+      "correction_log": [
+        "Retrieved 3 chunks from pgvector.",
+        "Document grading: 1/3 relevant. Route decision: 'web_search' (needs_web_search=True).",
+        "Correction triggered: Rewrote query 'What does the UniMate model achieve in character animation?' -> 'UniMate character animation model capabilities achievements'.",
+        "Web search fallback retrieved 3 web documents.",
+        "Generated answer candidate on attempt 1.",
+        "Answer passed both hallucination and answer relevance grading."
+      ]
+    },
+    {
+      "id": 2,
+      "question": "What is the purpose of the WearableQA benchmark?",
+      "type": "in_corpus",
+      "ground_truth": "WearableQA is a benchmark designed for health reasoning over real-world multimodal wearable sensor data.",
+      "naive_answer": "Based on the provided documents, the purpose of WearableQA is to evaluate whether AI systems (specifically LLMs) can reason over a real user's longitudinal wearable record. It provides a realistic and diagnostic benchmark for assessing LLM reasoning over real-world wearable data by testing distinct reasoning capabilities across data versus health reasoning and single- versus cross-signal reasoning.",
+      "naive_contexts_count": 3,
+      "naive_latency_sec": 1.51,
+      "corrective_answer": "Based on the provided context, the purpose of the WearableQA benchmark is to evaluate whether AI systems can reason over a real user's longitudinal wearable record. It provides a realistic and diagnostic benchmark for evaluating Large Language Model (LLM) reasoning over real-world wearable data, distinguishing model capabilities across 16 question types that cover data versus health reasoning and single- versus cross-signal reasoning.",
+      "corrective_contexts_count": 4,
+      "corrective_latency_sec": 9.96,
+      "correction_path_taken": true,
+      "rewritten_query": "WearableQA benchmark purpose dataset evaluation metrics wearable technology question answering",
+      "correction_log": [
+        "Retrieved 3 chunks from pgvector.",
+        "Document grading: 1/3 relevant. Route decision: 'web_search' (needs_web_search=True).",
+        "Correction triggered: Rewrote query 'What is the purpose of the WearableQA benchmark?' -> 'WearableQA benchmark purpose dataset evaluation metrics wearable technology question answering'.",
+        "Web search fallback retrieved 3 web documents.",
+        "Generated answer candidate on attempt 1.",
+        "Answer passed both hallucination and answer relevance grading."
+      ]
+    },
+    {
+      "id": 31,
+      "question": "How do attention mechanisms perform sparse selection in vision models?",
+      "type": "ambiguous",
+      "ground_truth": "Sparse vision transformers select a subset of important image tokens using reinforcement learning or gating, skipping redundant background patches as in LookThere.",
+      "naive_answer": "Based on the provided documents, the context does not contain sufficient information to answer how attention mechanisms perform sparse selection in vision models. (Document [1] discusses sparse vision using a reinforced selection framework called LookThere with a shallow input selector and deep representation extractor, rather than attention mechanisms performing sparse selection.)",
+      "naive_contexts_count": 3,
+      "naive_latency_sec": 11.17,
+      "corrective_answer": "Based on the provided context, vision models perform sparse selection using attention mechanisms in the following ways:\n\n* **SPA (Select and Pack Attention):** Dynamically selects informative tokens from images in a batch using a linear gating layer (or a low-cost gating layer supervised by selection labels) and packs them together, enabling a variable number of tokens to be used in parallelized GPU batch training and inference.\n* **STFormer:** Employs a query-sensitive sparse attention mechanism that optimizes computational efficiency by allowing each query to attend only to the most relevant key–value pairs.\n* **Sparse Token Selection / Pruning methods:** Dynamically identify and retain the most informative tokens to reduce computational load. For example, some pruning methods use an attention-gradient importance analysis method to quantify token importance scores and operate across dimensions such as tokens, attention heads, and FFN neurons.",
+      "corrective_contexts_count": 3,
+      "corrective_latency_sec": 11.43,
+      "correction_path_taken": true,
+      "rewritten_query": "sparse attention mechanisms vision transformers token selection computational efficiency computer vision",
+      "correction_log": [
+        "Retrieved 3 chunks from pgvector.",
+        "Document grading: 0/3 relevant. Route decision: 'web_search' (needs_web_search=True).",
+        "Correction triggered: Rewrote query 'How do attention mechanisms perform sparse selection in vision models?' -> 'sparse attention mechanisms vision transformers token selection computational efficiency computer vision'.",
+        "Web search fallback retrieved 3 web documents.",
+        "Generated answer candidate on attempt 1.",
+        "Answer passed both hallucination and answer relevance grading."
+      ]
+    },
+    {
+      "id": 32,
+      "question": "What are the key privacy guarantees in federated query processing for retail?",
+      "type": "ambiguous",
+      "ground_truth": "Federated query processing keeps customer interaction logs local to edge servers and only transmits aggregated gradient updates.",
+      "naive_answer": "Based on the provided document [1] regarding RegionFed (Federated Learning for Personalized Query Understanding in Heterogeneous Retail Environments), the framework provides $(\\varepsilon \\approx 0.60)$-differential privacy.",
+      "naive_contexts_count": 3,
+      "naive_latency_sec": 1.39,
+      "corrective_answer": "Based on the provided context, the key privacy guarantees in federated query processing/learning for retail environments (specifically discussed in Document [1] regarding RegionFed) include:\n\n* **Differential Privacy:** Providing $(\\epsilon \\approx 0.60)$-differential privacy (as achieved by RegionFed-Meta across the evaluated public datasets and architectures).\n* **Privacy-Preserving Training:** Utilizing federated learning as a natural solution to address privacy challenges arising from data heterogeneity across diverse geographic regions with distinct query patterns, vocabularies, and product preferences.\n\n*(Note: While other documents mention secure multi-party computation and differential privacy in broader data federation or federated learning settings, Document [1] is the specific source addressing federated query understanding/processing in retail environments.)*",
+      "corrective_contexts_count": 4,
+      "corrective_latency_sec": 10.84,
+      "correction_path_taken": true,
+      "rewritten_query": "privacy guarantees federated query processing retail differential privacy secure multi-party computation data governance",
+      "correction_log": [
+        "Retrieved 3 chunks from pgvector.",
+        "Document grading: 1/3 relevant. Route decision: 'web_search' (needs_web_search=True).",
+        "Correction triggered: Rewrote query 'What are the key privacy guarantees in federated query processing for retail?' -> 'privacy guarantees federated query processing retail differential privacy secure multi-party computation data governance'.",
+        "Web search fallback retrieved 3 web documents.",
+        "Generated answer candidate on attempt 1.",
+        "Answer passed both hallucination and answer relevance grading."
+      ]
+    },
+    {
+      "id": 41,
+      "question": "What is FlashAttention and who proposed it?",
+      "type": "out_of_corpus",
+      "ground_truth": "FlashAttention was proposed by Tri Dao et al. as an IO-aware exact attention algorithm that reduces memory reads and writes between GPU SRAM and HBM.",
+      "naive_answer": "Based on the provided context, there is no mention of who proposed FlashAttention, nor a comprehensive definition of what it is, other than mentioning that \"softmax attention has received an extraordinary amount of hardware-aware code engineering, culminating in flash attention\" (Document [1]) and discussing hardware-aware FP4 FlashAttention-4 for Blackwell's tensor cores (Document [2]). \n\nTherefore, the provided context does not contain sufficient information to answer the question.",
+      "naive_contexts_count": 3,
+      "naive_latency_sec": 34.84,
+      "corrective_answer": "Based on the provided context, FlashAttention is an IO-aware exact attention algorithm that uses tiling to reduce the number of memory reads and writes between GPU high bandwidth memory (HBM) and GPU on-chip SRAM. \n\nWhile the provided context mentions Tri Dao and 4 other authors in relation to the paper \"FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness\", it specifically attributes the proposal of the algorithm to \"We\" (the authors of the paper).",
+      "corrective_contexts_count": 3,
+      "corrective_latency_sec": 12.44,
+      "correction_path_taken": true,
+      "rewritten_query": "FlashAttention algorithm architecture authors research paper original publication",
+      "correction_log": [
+        "Retrieved 3 chunks from pgvector.",
+        "Document grading: 0/3 relevant. Route decision: 'web_search' (needs_web_search=True).",
+        "Correction triggered: Rewrote query 'What is FlashAttention and who proposed it?' -> 'FlashAttention algorithm architecture authors research paper original publication'.",
+        "Web search fallback retrieved 3 web documents.",
+        "Generated answer candidate on attempt 1.",
+        "Answer passed both hallucination and answer relevance grading."
+      ]
+    },
+    {
+      "id": 42,
+      "question": "What is Direct Preference Optimization (DPO) in language model alignment?",
+      "type": "out_of_corpus",
+      "ground_truth": "Direct Preference Optimization (DPO) was proposed by Rafailov et al. to align language models directly on human preferences using a closed-form loss without needing a separate reward model or RL.",
+      "naive_answer": "Based on the provided context, there is no mention or definition of \"Direct Preference Optimization (DPO)\". The documents only mention \"preference optimization (ORPO)\" in the context of post-training methods (Document [3]). Therefore, the provided context does not contain sufficient information to answer the question.",
+      "naive_contexts_count": 3,
+      "naive_latency_sec": 1.61,
+      "corrective_answer": "Based on the provided context, Direct Preference Optimization (DPO) is a method and technique for aligning large language models with human preferences directly from preference data using a simple classification/supervised loss, without requiring explicit reward modeling, a multi-stage reinforcement learning (RL) loop, or PPO. It achieves this through a new parameterization of the reward model in RLHF that enables the extraction of the corresponding optimal policy in closed form.",
+      "corrective_contexts_count": 3,
+      "corrective_latency_sec": 12.02,
+      "correction_path_taken": true,
+      "rewritten_query": "Direct Preference Optimization DPO language model alignment algorithm formulation loss function",
+      "correction_log": [
+        "Retrieved 3 chunks from pgvector.",
+        "Document grading: 0/3 relevant. Route decision: 'web_search' (needs_web_search=True).",
+        "Correction triggered: Rewrote query 'What is Direct Preference Optimization (DPO) in language model alignment?' -> 'Direct Preference Optimization DPO language model alignment algorithm formulation loss function'.",
+        "Web search fallback retrieved 3 web documents.",
+        "Generated answer candidate on attempt 1.",
+        "Answer passed both hallucination and answer relevance grading."
+      ]
+    }
+  ]
+}
