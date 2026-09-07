@@ -42,6 +42,13 @@ try:
 except Exception:
     pass
 
+try:
+    import nest_asyncio
+    if sys.version_info >= (3, 12):
+        nest_asyncio.apply = lambda *args, **kwargs: None
+except ImportError:
+    pass
+
 from ragas import evaluate
 from ragas.metrics import faithfulness, answer_relevancy, context_precision, context_recall
 from ragas.llms import LangchainLLMWrapper
